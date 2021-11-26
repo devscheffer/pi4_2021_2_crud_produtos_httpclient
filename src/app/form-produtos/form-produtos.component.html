@@ -1,0 +1,14 @@
+<h3>Formulário de Produtos</h3>
+
+<label for="nome">Nome:</label>
+<input [(ngModel)]="produto.nome" id="nome">
+<br />
+
+<label for="preco">Preco:</label>
+<input type="number" [(ngModel)]="produto.preco" id="preco">
+<br />
+
+<button (click)="salvar()" >{{botaoAcao}}</button>
+<button (click)="cancelar()" >Cancelar</button>
+
+<h4>{{mensagem}}</h4>
